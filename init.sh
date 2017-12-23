@@ -5,6 +5,13 @@
 
 apt-get update
 
+# git
+apt-get install git -y
+
+# vlc
+apt-get install vlc -y
+apt-get install browser-plugin-vlc -y
+
 # mate
 apt-add-repository ppa:ubuntu-mate-dev/ppa -y
 apt-add-repository ppa:ubuntu-mate-dev/trusty-mate -y
