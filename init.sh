@@ -33,4 +33,7 @@ apt-get install sublime-text -y
 # eclipse
 apt-get install eclipse -y
 
+# nodejs
+apt-get install nodejs -y
+apt-get install npm -y
 
