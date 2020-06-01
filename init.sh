@@ -4,34 +4,23 @@
 # run as sudo init.sh
 
 apt-get update
+apt-get upgrade -y
 
-# git
-apt-get install git -y
+apt-get install git maven python ansible -y
 
-# vlc
-apt-get install vlc -y
-apt-get install browser-plugin-vlc -y
-
-# mate
-apt-add-repository ppa:ubuntu-mate-dev/ppa -y
-apt-add-repository ppa:ubuntu-mate-dev/trusty-mate -y
-apt-get install mate-desktop-environment-extras -y
-
-# x2go
-apt-get install software-properties-common -y
-add-apt-repository ppa:x2go/stable -y
-apt-get install x2goserver x2goserver-xsession -y
-apt-get install x2godesktopsharing -y
-# allow ssh for x2go
-ufw allow 22
-
-
-# sublime text
-add-apt-repository ppa:webupd8team/sublime-text-2 -y
-apt-get install sublime-text -y
-
-# eclipse
-apt-get install eclipse -y
+# docker
+apt-get install \
+    apt-transport-https \
+    ca-certificates \
+    curl \
+    gnupg-agent \
+    software-properties-common -y
+add-apt-repository \
+   "deb [arch=amd64] https://download.docker.com/linux/ubuntu \
+   $(lsb_release -cs) \
+   stable"
+apt-get update
+apt-get install docker-ce docker-ce-cli containerd.io -y
 
 # nodejs
 apt-get install nodejs -y
