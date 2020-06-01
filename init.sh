@@ -6,7 +6,7 @@
 apt-get update
 apt-get upgrade -y
 
-apt-get install git maven python ansible -y
+apt-get install openjdk-8-jdk-headless maven python ansible -y
 
 # docker
 apt-get install \
