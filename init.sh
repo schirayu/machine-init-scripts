@@ -6,7 +6,7 @@
 apt-get update
 apt-get upgrade -y
 
-apt-get install openjdk-17-jdk maven python -y
+apt-get install openjdk-17-jdk-headless maven python3 -y
 
 # docker
 apt-get install \
